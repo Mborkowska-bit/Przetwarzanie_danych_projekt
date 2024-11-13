@@ -1,0 +1,2 @@
+# ładowanie paczek
+library(tidyverse)
