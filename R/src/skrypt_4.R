@@ -72,9 +72,18 @@ dane_11 <- dane |>
   dplyr::summarise(dplpyr::across(dplyr::where(\(i)is.numeric(i)), \(i) mean (i)))
 
 
+ test <- c(6, 7, 8, 9)
+ test <- cumsum(test)
+test <- mean(test)
+test <- mean(cumsum(c(6, 7, 8, 9)))
+
+test <- c(6, 7, 8, 9) |> cumsum() |>
 
 
+  # test potokowania
+  # nadpisywanie kolejnymi wartościami
 
+dane_nadpisane <- c(6, 7, 8, 9)
 
 
 
